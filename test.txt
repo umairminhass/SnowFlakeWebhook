@@ -1,0 +1,5 @@
+SELECT c_name as firstname, c_address as address, c_phone as phone FROM CUSTOMER LIMIT 3
+
+pat-na2-91e404c5-0d52-4f1d-b4ed-cfeff667240b
+
+
