@@ -2,4 +2,22 @@ SELECT c_name as firstname, c_address as address, c_phone as phone FROM CUSTOMER
 
 pat-na2-91e404c5-0d52-4f1d-b4ed-cfeff667240b
 
+pat-na2-91e404c5-0d52-4f1d-b4ed-cfeff667240b
 
+isql -v SnowflakeDSN muhammadumair199407 Linkedin@786786
+
+
+odbcinstini -q -d
+
+export PATH=$PATH:/etc/odbcinst.ini
+
+chmod 777 /etc/odbc.ini /etc/odbcinst.ini
+
+chmod -R 777 /usr/lib/snowflake/odbc/lib
+
+docker build -t snowflake-webhook-app .
+
+# Run the container
+docker run -d -p 8080:80 snowflake-webhook-app
+
+odbcinst -q -d -n "SnowflakeODBC"

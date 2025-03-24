@@ -3,7 +3,7 @@ $secretHBKey = "Hubspot_Token";
 
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "rootpassword";
 
 // Create connection
 $conn_mysq = mysqli_connect($servername, $username, $password);
